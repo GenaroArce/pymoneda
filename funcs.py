@@ -27,9 +27,6 @@ def manejo_errores(self, mensaje, color):
     self.resultado_label = ctk.CTkLabel(self.pantalla, text=mensaje, fg_color=color, text_color="black", corner_radius=8)
     self.resultado_label.place(relx=0.5, rely=0.6, anchor=tk.CENTER)
 
-def check_boton(self):
-    ...
-
 def manejo_valido(self, mensaje, color, valor, moneda, moneda_convertida, conversion):
     if hasattr(self, "resultado_boton"):
         self.resultado_boton.destroy()
